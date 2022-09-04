@@ -9,9 +9,12 @@
             {{#loginUserName}}
                 Logged in as: <span id="user">{{loginUserName}}</span>
             <a href ="/logout" class="btn btn-info active" role="button">Logout</a>
+            <!-- Google -->
             {{/loginUserName}}
             {{^longinUserName}}
                 <a href="/oauth2/authorization/google" class="btn btn-success active" role="button">Google Login</a>
+            <!-- Naver -->
+                <a href="/oauth2/authorization/naver" class="btn btn-secondary active" role="button">Naver Login</a>
             {{/longinUserName}}
         </div>
     </div>
